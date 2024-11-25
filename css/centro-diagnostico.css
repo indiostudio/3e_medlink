@@ -1,0 +1,213 @@
+/* Variáveis CSS */
+:root {
+    --primary-color: #007bff;
+    --background-color: #ffffff;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --text-color: #333;
+    --header-bg: #007BFF;
+    --footer-bg: #797979;
+    --submenu-bg: #007BFF;
+    --submenu-border: #ffffff;
+}
+
+/* Reset de Margens e Padding */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Flexível para o Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+.header2 {
+    background: white ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.nav-title {
+    color: white;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    color: #1a73e8;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 30px;
+    padding-top: 70px;
+    margin-bottom: 0px;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 0 40px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 20px 0;
+    padding: 14px 0;
+}
+
+.img2 {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    flex: 1 1 350px;
+    margin-top: -13vh;
+}
+
+/* Divisor */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 93%;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: left; 
+    width: 35%; 
+}
+
+.city {
+    margin-bottom: 40px;
+}
+
+.city h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--hover-shadow);
+}
+
+/* Footer */
+footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 55px;
+    margin-top: -10px;
+    padding-right: 163vh;
+}
+
+.breadcrumb{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.breadcrumb a {
+    color: #1a73e8;
+
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin-right: 5px;
+}

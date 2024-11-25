@@ -1,0 +1,5 @@
+1 passo instalar o flask 
+pip install flask flask-cors
+
+2 passo executar o codigo python 
+python app.py

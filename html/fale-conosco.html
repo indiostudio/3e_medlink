@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="/css/fale-conosco.css">
+    <link rel="stylesheet" href="/css/caixa-submenu.css">
+    <link rel="icon" href="/img/icone de guia.png" sizes="48x48" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/b01ddab066.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/img/MEDLINK3.png" alt="Logo do Hospital">
+                <a href="/html/home.html"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Sobre </a>
+                    <ul class="submenu">
+                        <li><a href="/html/quem-somos.html">Quem somos</a></li>
+                        <li><a href="/html/nossas-unidades.html">Nossas Unidades</a></li>
+                        <li><a href="/html/fale-conosco.html">Fale Conosco</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Para você </a>
+                    <ul class="submenu">
+                        <li><a href="/html/pronto-atendimento.html">Pronto atendimento</a></li>
+                        <li><a href="/html/agendamento.html">Agendamentos</a></li>
+                        <li><a href="/html/doe-sangue.html">Doe sangue</a></li>
+                        <li><a href="/html/encontre-seu-medico.html">Encontre seu médico</a></li>
+                        <li><a href="/html/telemedicina-home.html">Telemedicina</a></li>
+                        <li><a href="/html/avaliador-de-sintomas.html">Avaliador de sintomas</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="nav-buttons">
+                <a href="#" class="nav-button">Portal do Paciente</a>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <nav class="breadcrumb">
+        <a href="/html/home.html">Home</a>
+        <span class="separator">&gt;</span>
+        <span>Fale conosco</span>
+    </nav>
+
+
+    <main>
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <p>Preencha o formulário abaixo para entrar em contato com a nossa equipe.</p>
+
+            <form id="contact-form">
+                <div class="form-group">
+
+                    <input type="text" id="nome" name="nome" placeholder="Nome:" required>
+                </div>
+
+                <div class="form-group">
+
+                    <input type="email" id="email" name="email" placeholder="E-mail:" required>
+                </div>
+
+                <div class="form-group">
+
+                    <input type="tel" id="telefone" name="telefone" placeholder="Telefone:" required>
+                </div>
+
+                <div class="form-group">
+
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui sua mensagem:"
+                        required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="message-box"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="c">
+            <p>&copy; 2024 Hospital MedLink. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/js/fale-conosco.js"></script>
+</body>
+
+</html>

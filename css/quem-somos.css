@@ -1,0 +1,362 @@
+/* Variáveis CSS */
+:root {
+    --primary-color: #007bff; /* Cor principal */
+    --background-color: #ffffff;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --text-color: #333;
+    --header-bg: #007BFF;
+    --footer-bg: #797979;
+    --submenu-bg: #007BFF;
+    --submenu-border: #ffffff;
+}
+
+/* Reset de Margens e Padding */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Flexível para o Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+.header2 {
+    background: white ;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 30px;
+    padding-top: 70px;
+    margin-bottom: 0px;
+   
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 0 40px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 20px 0;
+    padding: 14px 0;
+}
+
+.img2 {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    flex: 1 1 350px;
+    margin-top: -13vh;
+   
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.container p { 
+    text-align: center;
+}
+
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 55px;
+  margin-top: -10px;
+    padding-right: 170vh;
+    
+}
+
+.breadcrumb{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.breadcrumb a {
+    color: #1a73e8;
+
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin-right: 5px;
+}
+
+
+
+/* Divisor */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 93%;
+}
+
+
+
+
+
+
+
+
+
+
+#propósito-visao-valores {
+    padding: 60px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex; /* Usando flexbox para disposição horizontal */
+    justify-content: space-between; /* Espaçamento entre as caixas */
+    gap: 20px; /* Espaçamento entre as caixas */
+    margin-left: 4vh;
+    margin-right: 4vh;
+}
+
+.caixa {
+    flex: 1; /* Permite que as caixas cresçam igualmente */
+    min-width: 250px; /* Largura mínima */
+    max-width: 370px; /* Largura máxima opcional */
+    height: 126px; /* Altura fixa para cada caixa */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    padding-top: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.caixa h3 {
+    font-size: 25px;
+    color: black;
+    
+}
+
+.caixa p {
+    text-align: left;
+}
+
+
+
+
+
+
+
+.h2 {
+    text-align: left;
+    color: black;
+    padding-bottom: 30px;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilo comum para todas as seções de história */
+#nossa-historia, #inicio, #projeto-adiado, #retomada {
+    
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+}
+
+.historia-container, .quem-somos-container {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    flex-direction: row; /* Garante que imagem e texto fiquem lado a lado */
+    margin-bottom: 0px; /* Espaçamento entre as seções */
+    margin-top: 0px;
+    padding: 0px;
+    object-fit: cover;
+}
+
+.imagem-container {
+    flex: 1; /* Define a proporção da imagem */
+    margin-right: 20px; /* Espaço entre imagem e texto */
+}
+
+.imagem-historia {
+    width: 100%; /* A imagem ocupa a largura total do container */
+    max-width: 530px; /* Define o tamanho máximo para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.texto-container, .texto, .texto-2, .texto-3 {
+    flex: 2; /* O texto ocupa mais espaço que a imagem */
+    padding: 0;
+    margin-top: 0px;
+    
+    
+   
+}
+
+.texto-container p, .texto p, .texto-2 p, .texto-3 p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-top: -5px;
+    color: black;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.quem-somos-container {
+    display: flex; /* Usar flexbox para alinhar imagem e texto lado a lado */
+
+}
+
+.imagem-container {
+    flex: 1; /* Faz com que a imagem ocupe um espaço flexível */
+    text-align: center; /* Centraliza a imagem dentro do container */
+    margin-right: 20px; /* Espaçamento à direita para separar do texto */
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.texto-destaque {
+    
+
+    
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-top: 0px;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-left: 20px;
+    
+
+
+    
+}
+
+.texto-destaque-2 {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-top: 0px;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 70px;
+}
+
+
+
+.submenu-classe { /* Substitua pelo seletor correto */
+    overflow: hidden;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

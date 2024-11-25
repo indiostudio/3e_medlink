@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Diagnóstico</title>
+    <link rel="stylesheet" href="/css/centro-diagnostico.css">
+    <link rel="stylesheet" href="/css/caixa-submenu.css">
+    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pVnHjQ0N1eM/LT3+H/9jT8QK/YFgh+/Uu0Vhqlb9+e4Vn/U1/Z4rj/yTb8M/QivxVJ1JUMZ1NhZl6e4VZb1eJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="/img/icone de guia.png" sizes="48x48" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/b01ddab066.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/html/home.html">
+                    <img src="/img/MEDLINK3.png" alt="Logo do Hospital">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Sobre</a>
+                    <ul class="submenu">
+                        <li><a href="/html/quem-somos.html">Quem somos</a></li>
+                        <li><a href="/html/nossas-unidades.html">Nossas Unidades</a></li>
+                        <li><a href="/html/fale-conosco.html">Fale Conosco</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Para você</a>
+                    <ul class="submenu">
+                        <li><a href="/html/pronto-atendimento.html">Pronto atendimento</a></li>
+                        <li><a href="/html/agendamento.html">Agendamentos</a></li>
+                        <li><a href="/html/doe-sangue.html">Doe sangue</a></li>
+                        <li><a href="/html/encontre-seu-medico.html">Encontre seu médico</a></li>
+                        <li><a href="/html/telemedicina-home.html">Telemedicina</a></li>
+                        <li><a href="/html/avaliador-de-sintomas.html">Avaliador de sintomas</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="nav-buttons">
+                <a href="#" class="nav-button">Portal do Paciente</a>
+            </div>
+        </nav>
+
+        <!-- Container de Busca -->
+        <div class="search-container" style="display: none; position: absolute; top: 70px; right: 20px;">
+            <form action="/search" method="GET">
+                <input type="text" name="q" placeholder="Buscar..." />
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="/html/home.html">Home</a>
+        <span class="separator">&gt;</span>
+        <span>Centro diagnóstico</span>
+    </nav>
+
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Centros de Diagnósticos</h1>
+                <p>Utilizamos as mais recentes inovações tecnológicas, combinadas com práticas modernas e uma equipe
+                    médica altamente desenvolvida, para oferecer diagnósticos com precisão e agilidade, garantindo
+                    confiança.</p>
+            </div>
+            <img src="/img/centro-diagnostico.png" class="img2" alt="Imagem do Centro de Diagnóstico" width="350"
+                height="">
+        </section>
+
+        <hr class="divider">
+
+        <section class="container">
+            <div class="city">
+                <h2>São Paulo</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Centro de Diagnósticos Praça da Sé</h3>
+                        <p>Rua Quintino Bocaiúva, 893<br>São Paulo, SP</p>
+                    </article>
+                    <article class="card">
+                        <h3>Centro de Diagnósticos Tatuapé</h3>
+                        <p>Avenida Celso Garcia, 4716<br>São Paulo, SP</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hospital MedLink. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuItems = document.querySelectorAll('.menu > li > a');
+
+            menuItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    const submenu = this.nextElementSibling;
+                    if (submenu && submenu.classList.contains('submenu')) {
+                        e.preventDefault();
+                        submenu.classList.toggle('active');
+                    }
+                });
+            });
+
+            const searchIcon = document.querySelector('.search-icon');
+            const searchContainer = document.querySelector('.search-container');
+
+            searchIcon.addEventListener('click', function () {
+                searchContainer.style.display = searchContainer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+
+</html>

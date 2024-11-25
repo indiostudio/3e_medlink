@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/img/icone de guia.png" sizes="48x48" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="https://kit.fontawesome.com/b01ddab066.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- Formulário de Cadastro -->
+        <div class="form-container sign-up-container">
+            <form class="form" id="registerForm">
+                <h1>Criar Conta</h1>
+                <label class="label-input" for="signUpName">
+                    <i class="fa-regular fa-user icon-modify"></i>
+                    <input type="text" id="signUpName" placeholder="Nome" required>
+                </label>
+                <label class="label-input" for="signUpCPF">
+                    <i class="fa-regular fa-address-card icon-modify"></i>
+                    <input type="text" id="signUpCPF" placeholder="CPF" required>
+                </label>
+                <label class="label-input" for="signUpEmail">
+                    <i class="fa-regular fa-envelope icon-modify"></i>
+                    <input type="email" id="signUpEmail" placeholder="Email" required>
+                </label>
+                <label class="label-input" for="signUpPassword">
+                    <i class="fa-solid fa-lock icon-modify"></i>
+                    <input type="password" id="signUpPassword" placeholder="Senha" required>
+                </label>
+                <div id="signUpError" class="error-message" style="display: none;"></div>
+                <button type="submit" class="btncad">Cadastrar</button>
+            </form>
+        </div>
+
+        <!-- Formulário de Login -->
+        <div class="form-container sign-in-container">
+            <form class="form" id="loginForm">
+                <h1>Entrar</h1>
+                <label class="label-input" for="signInEmail">
+                    <i class="fa-regular fa-envelope icon-modify"></i>
+                    <input type="email" id="signInEmail" placeholder="Email" required>
+                </label>
+                <label class="label-input" for="signInPassword">
+                    <i class="fa-solid fa-lock icon-modify"></i>
+                    <input type="password" id="signInPassword" placeholder="Senha" required>
+                </label>
+                <a class="esqueci" href="#">Esqueceu sua senha?</a>
+                <div id="signInError" class="error-message" style="display: none;"></div>
+                <button type="submit" class="btnent">Entrar</button>
+            </form>
+        </div>
+
+        <!-- Painel de Sobreposição -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bem-vindo à MedLink!</h1>
+                    <p>Para se manter conectado conosco, faça login com suas informações pessoais</p>
+                    <button class="ghost" id="signIn">Entrar</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Olá, Amigo!</h1>
+                    <p>Insira seus dados pessoais e comece seu plano de saúde conosco</p>
+                    <button class="ghostcad" id="signUp">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+
+</body>
+
+</html>

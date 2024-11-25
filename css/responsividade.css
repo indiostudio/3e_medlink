@@ -1,0 +1,113 @@
+/*Resposividade agendamento*/
+/* Responsividade para dispositivos médios (tablets) */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hero h1, .agendamento h2{
+        font-size: 28px;
+        text-align: center;
+    }
+
+.portal-paciente, .portal-paciente h2 {
+    max-width: 60px;
+    margin: 0px;
+}
+
+
+
+
+
+    .agendamento, .hero-text {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .img2 {
+        margin-top: 10px;
+    }
+
+    form input, form select, form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .service-container, .breadcrumb {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+/* Responsividade para dispositivos pequenos (celulares) */
+@media (max-width: 480px) {
+    .hero h1, .agendamento h2, .portal-paciente h2 {
+        font-size: 22px;
+    }
+
+    .hero-text, .breadcrumb, .portal-paciente {
+        padding: 10px;
+    }
+
+    form input, form select, form button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menu > li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-icon {
+        margin-left: auto;
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: 24px; /* Ajuste conforme necessário para o caractere Unicode */
+        color: white;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .search-icon svg {
+        width: 24px;
+        height: 24px;
+        stroke: white;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+}
+
+/*fim*/
+
+
+

@@ -1,0 +1,142 @@
+/* Variáveis CSS */
+:root {
+    --primary-color: #007bff;
+    --background-color: #ffffff;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --text-color: #333;
+    --header-bg: #007BFF;
+    --footer-bg: #797979;
+    --submenu-bg: #007BFF;
+    --submenu-border: #ffffff;
+}
+
+/* Reset de Margens e Padding */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Flexível para o Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+.header2 {
+    background: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 30px;
+    padding-top: 70px;
+    margin-bottom: 0px;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 0 40px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 20px 0;
+    padding: 14px 0;
+}
+
+.img2 {
+    max-width: 90%;
+    height: 700px;
+    padding: 20px;
+    flex: 1 1 350px;
+    margin-top: -13vh;
+}
+
+/* Footer */
+footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 55px;
+    margin-top: -10px;
+    padding-right: 160vh;
+}
+
+.breadcrumb {
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.breadcrumb a {
+    color: #1a73e8;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin-right: 5px;
+}
+
+/* Divisor */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 93%;
+}
+
+.center-content {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    margin-top: 50px;
+}

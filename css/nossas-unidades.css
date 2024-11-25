@@ -1,0 +1,246 @@
+/* Variáveis CSS */
+:root {
+    --primary-color: #007bff;
+    --background-color: #ffffff;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --text-color: #333;
+    --header-bg: #007BFF;
+    --footer-bg: #797979;
+    --submenu-bg: #007BFF;
+    --submenu-border: #ffffff;
+}
+
+/* Reset de Margens e Padding */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Flexível para o Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+.header2 {
+    background: white ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 80px;
+    margin-top: -10px;
+    padding-right: 161vh;
+}
+
+.breadcrumb{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.breadcrumb a {
+    color: #1a73e8;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin-right: 5px;
+}
+
+/* Divisor */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 93%;
+}
+
+/* Footer */
+footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+/*mapa e unidades alinhas*/
+.map-container {
+    text-align: left; 
+    margin: 20px 0; 
+}
+
+.map-container h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.map-container iframe {
+    max-width: 250vh; 
+    height: 360px;
+    border: 30px;
+    border: 1px solid #ddd;
+}
+
+#unidades-e-mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.unidades-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+.unidade {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 32%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.unidade h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.unidade p, .unidade ul {
+    margin: 5px 0;
+}
+
+.unidade ul {
+    list-style: none;
+    padding: 0;
+}
+
+.unidade ul li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.unidade ul li img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.container-2 {
+    text-align: left; 
+    margin: 20px 0; 
+}
+
+.map-container h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.map-container iframe {
+    max-width: 250vh; 
+    height: 360px;
+    border: 30px;
+    border: 1px solid #ddd; 
+}
+
+#unidades-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-2 {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.unidade-3 {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 32%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.unidade-3 h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.unidade-3 p, .unidade-3 ul {
+    margin: 5px 0;
+}
+
+.unidade-3 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.unidade-3 ul li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.unidade-3 ul li img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}

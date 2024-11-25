@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+.header2 {
+    background: white ;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: white;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: black;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 14px;
+}
+
+.btn {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-image {
+    width: 500px;
+}
+
+/* Informações */
+.info {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-item i {
+    font-size: 50px;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.info-item h3 {
+    font-size: 24px;
+}
+
+.info-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilização para a imagem */
+.img2 {
+    max-width: 100%;
+    height: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.label-input {
+    display: flex;
+    align-items: center;   
+    max-height: 50px;
+}
+
+.p1 {
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px;
+    background-color: white;
+    padding: 20px;
+}
+
+.left {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.right {
+    flex: 2;
+    text-align: justify;
+    max-width: 110vh; 
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.container p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #000000;
+    font-size: 17px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    border: none; /* Remove a borda padrão */
+    height: 1px; /* Define a altura da linha */
+    background-color: #ccc; /* Cor da linha */
+    margin: 10px 10; /* Espaçamento vertical */
+  
+    margin: 20px auto; /* Para centralizar horizontalmente */
+    width: calc(96% - 60px); /* Para definir a largura com base no espaço desejado */
+    
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 55px;
+    margin-top: -10px;
+    padding-right: 170vh;
+    
+}
+
+.breadcrumb{
+    margin-top: 40px;
+}
+
+.breadcrumb a {
+    color: #1a73e8;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin-right: 5px;
+}

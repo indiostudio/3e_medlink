@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliador de Sintomas</title>
+    <link rel="stylesheet" href="/css/avaliador-de-sintomas.css">
+    <link rel="stylesheet" href="/css/caixa-submenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/chat.css">
+    <link rel="icon" href="/img/icone de guia.png" sizes="48x48" type="image/png">
+    <script src="https://kit.fontawesome.com/b01ddab066.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/html/home.html">
+                    <img src="/img/MEDLINK3.png" alt="Logo do Hospital">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Sobre</a>
+                    <ul class="submenu">
+                        <li><a href="/html/quem-somos.html">Quem somos</a></li>
+                        <li><a href="/html/nossas-unidades.html">Nossas Unidades</a></li>
+                        <li><a href="/html/fale-conosco.html">Fale Conosco</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Para você</a>
+                    <ul class="submenu">
+                        <li><a href="/html/pronto-atendimento.html">Pronto atendimento</a></li>
+                        <li><a href="/html/agendamento.html">Agendamentos</a></li>
+                        <li><a href="/html/doe-sangue.html">Doe sangue</a></li>
+                        <li><a href="/html/encontre-seu-medico.html">Encontre seu médico</a></li>
+                        <li><a href="/html/telemedicina-home.html">Telemedicina</a></li>
+                        <li><a href="/html/avaliador-de-sintomas.html">Avaliador de sintomas</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="nav-buttons">
+                <a href="#" class="nav-button">Portal do Paciente</a>
+            </div>
+        </nav>
+
+        <!-- Container de Busca -->
+        <div class="search-container" style="display: none; position: absolute; top: 70px; right: 20px;">
+            <form action="/search" method="GET">
+                <input type="text" name="q" placeholder="Buscar..." />
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="/html/home.html">Home</a>
+        <span class="separator">&gt;</span>
+        <span>Avaliador de Sintomas</span>
+    </nav>
+
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Converse com o nosso Avaliador de Sintomas!</h1>
+                <p>Com o chatbot da MedLink, você pode descrever seus sintomas e receber orientações rápidas e
+                    confiáveis. Nossa tecnologia avançada está pronta para ajudar você a entender melhor sua saúde, com
+                    o cuidado e a precisão que você merece!</p>
+            </div>
+            <img src="/img/avaliador-de-sintomas.png" class="img2" alt="Imagem do Centro de Diagnóstico" width=""
+                height="">
+        </section>
+
+        <hr class="divider">
+
+
+    </main>
+
+
+
+    <div class="center-content">
+        <h1>Descubra o que seus sintomas podem indicar!</h1>
+        <p>Converse agora com o nosso Avaliador de Sintomas e receba orientações instantâneas. Um passo rápido e fácil
+            para entender melhor sua saúde!</p>
+    </div>
+
+
+    <main class="chat">
+        <div id="chat-container">
+            <div id="chat-header">Avaliador de Sintomas</div>
+            <div id="chat-messages"></div>
+            <div id="user-input">
+                <input type="text" id="message-input" placeholder="Descreva seus sintomas...">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hospital MedLink. Todos os direitos reservados.</p>
+    </footer>
+
+
+
+    <script src="/js/chat.js"></script>
+</body>
+
+</html>

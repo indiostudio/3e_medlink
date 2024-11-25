@@ -1,0 +1,176 @@
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+#hero {
+    background-image: url('path/to/your/image.jpg');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 70px;
+}
+
+.logo img {
+    height: 100px;
+    width: 15vh;
+    margin-right: 90px;
+}
+
+#toggle-services {
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+#toggle-services.rotated {
+    transform: rotate(180deg);
+}
+
+.menu li a:hover {
+    background-color: #007BFF;
+}
+
+.menu > li > a::after {
+    content: '';
+    margin-left: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.menu > li:hover > a::after,
+.menu > li.active > a::after {
+    transform: rotate(-135deg);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #007BFF;
+    padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 20px;
+    width: auto;
+    max-width: 350px;
+    height: auto;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: nowrap;
+    right: 0;
+    border-radius: 11px;
+    border: 2px solid white;
+    overflow: hidden;
+    
+}
+
+.submenu li {
+    list-style-type: none;
+    border: none;
+    margin-left: 0; 
+    padding: 0; 
+}
+
+.submenu a {
+    padding: 5px 0;
+    display: block;
+    color: white;
+    border: none;
+    padding: 10px 0; 
+    margin: 0; 
+}
+
+.submenu a:hover {
+    background-color: #007BFF;
+}
+
+.menu li:hover .submenu {
+    display: grid;
+    width: 600px;
+}
+
+.menu li.active .submenu {
+    display: grid;
+}
+
+.search-icon {
+    cursor: pointer;
+    display: flex;
+    margin-left: 450px;
+    align-items: center;
+    color: white; 
+}
+
+.search-icon i {
+    font-size: 18px; 
+}
+
+/* Estilos para os botões à direita */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    background-color: white;
+    color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+

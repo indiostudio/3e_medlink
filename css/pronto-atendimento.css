@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.services,
+.specialties,
+.contact {
+    padding: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.pont {
+    font-size: 57px;
+    margin-bottom: 0px;
+    color: #2A2A2A;
+    text-align: left;
+    max-width: 400px;
+    white-space: nowrap;
+    padding: 100px;
+    margin-top: 30px;
+    margin: -80px;
+    max-width: 60%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.services h3 {
+    font-size: 17px;
+    margin-bottom: 0px;
+    color: #747474;
+    margin-top: -25px;
+    text-align: left;
+    padding: 20px;
+    max-width: 400px;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 50%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+
+}
+
+/* Estiliza o contêiner principal para expandir a largura total */
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    width: 100%;
+    height: 300px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: 50px;
+
+}
+
+/* Ajusta cada caixa para que ocupem a largura desejada */
+.service-item {
+    flex: 0 0 45%;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: left;
+}
+
+/* Efeito ao passar o mouse */
+.service-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font: bold;
+    white-space: nowrap;
+}
+
+.label-input {
+    display: flex;
+    align-items: center;
+    max-height: 37px;
+}
+
+.service-item p {
+    padding: 12px;
+}
+
+.service-item p {
+    padding-top: px;
+    height: -60px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 25px;
+    padding-right: 167vh
+}
+
+.breadcrumb {
+    margin-top: 40px;
+}
+
+.breadcrumb a {
+    color: #1a73e8;
+
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin-right: 5px;
+}

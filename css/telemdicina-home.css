@@ -1,0 +1,250 @@
+/* Variáveis CSS */
+:root {
+    --primary-color: #007bff; /* Cor principal */
+    --background-color: #ffffff;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --text-color: #333;
+    --header-bg: #007BFF;
+    --footer-bg: #797979;
+    --submenu-bg: #007BFF;
+    --submenu-border: #ffffff;
+}
+
+/* Reset de Margens e Padding */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Flexível para o Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+.header2 {
+    background: white ;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 30px;
+    padding-top: 70px;
+    margin-bottom: 0px;
+   
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 0 40px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 20px 0;
+    padding: 14px 0;
+}
+
+.img2 {
+    max-width: 90%;
+    height: 700px;
+    padding: 20px;
+    flex: 1 1 350px;
+    margin-top: -13vh;
+   
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 55px;
+  margin-top: -10px;
+    padding-right: 170vh;
+    
+}
+
+.breadcrumb{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.breadcrumb a {
+    color: #1a73e8;
+
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin-right: 5px;
+}
+
+
+
+/* Divisor */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 93%;
+}
+
+
+.div-btn {
+   text-align: center;
+   align-items: center;
+   margin-top: 100px;
+   padding-left: 400px;
+   padding-right: 400px;
+   padding-left: center;
+   padding-bottom: 100px;
+}
+
+.btn-h1 {
+   text-align: center;
+
+   
+}
+
+.botao-2 {
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo do Botão */
+.div-btn button {
+    background: linear-gradient(135deg, #007BFF, #007BFF); /* Gradiente de fundo */
+    color: white;
+    border: none;
+    padding: 20px 30px; /* Tamanho maior */
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 25px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+    font-size: 16px;
+    transition: all 0.3s ease-in-out; /* Suavizar transições */
+    position: relative; /* Posicionamento para animação de brilho */
+    overflow: hidden; /* Prevenir overflow na animação */
+    
+}
+
+/* Efeito de hover no botão */
+.div-btn button:hover {
+    background: linear-gradient(135deg, #007BFF, #007BFF); /* Alteração de cor ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Aumentar a sombra */
+   
+}
+
+/* Animação de clique */
+.div-btn button:active {
+    transform: scale(0.98); /* Efeito de "pressionamento" */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de brilho ao passar o mouse */
+.div-btn button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 60%);
+    transition: all 0.6s ease-in-out;
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+}
+
+
+
+
+
+
+
+
+.div-btn button:hover {
+    background-color: #007BFF;
+    transform: translateY(-2px); /* Elevação ao passar o mouse */
+}
+
+a, button {
+    text-decoration: none;
+    text-decoration: white;
+}
+
+a {
+    color: white; /* Muda a cor do texto do link para branco */
+    text-decoration: none; /* Remove sublinhado, se necessário */
+    text-decoration: bold;
+}

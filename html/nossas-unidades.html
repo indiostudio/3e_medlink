@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas Unidades</title>
+    <link rel="stylesheet" href="/css/nossas-unidades.css">
+    <link rel="stylesheet" href="/css/caixa-submenu.css">
+    <link rel="icon" href="/img/icone de guia.png" sizes="48x48" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/b01ddab066.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/html/home.html">
+                    <img src="/img/MEDLINK3.png" alt="Logo do Hospital">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Sobre</a>
+                    <ul class="submenu">
+                        <li><a href="/html/quem-somos.html">Quem somos</a></li>
+                        <li><a href="/html/nossas-unidades.html">Nossas Unidades</a></li>
+                        <li><a href="/html/fale-conosco.html">Fale Conosco</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Para você</a>
+                    <ul class="submenu">
+                        <li><a href="/html/pronto-atendimento.html">Pronto atendimento</a></li>
+                        <li><a href="/html/agendamento.html">Agendamentos</a></li>
+                        <li><a href="/html/doe-sangue.html">Doe sangue</a></li>
+                        <li><a href="/html/encontre-seu-medico.html">Encontre seu médico</a></li>
+                        <li><a href="/html/telemedicina-home.html">Telemedicina</a></li>
+                        <li><a href="/html/avaliador-de-sintomas.html">Avaliador de sintomas</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="nav-buttons">
+                <a href="#" class="nav-button">Portal do Paciente</a>
+            </div>
+        </nav>
+
+        <!-- Container de Busca -->
+        <div class="search-container" style="display: none; position: absolute; top: 70px; right: 20px;">
+            <form action="/search" method="GET">
+                <input type="text" name="q" placeholder="Buscar..." />
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="/html/home.html">Home</a>
+        <span class="separator">&gt;</span>
+        <span>Nossas Unidades</span>
+    </nav>
+
+    <section id="unidades-e-mapa">
+        <div class="map-container">
+            <h2>Mapa das Nossas Unidades</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.3165194315684!2d-46.56302772376325!3d-23.449044657477206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5aa7fffffff%3A0xa2ffbd9cd551a47a!2sEscola%20Estadual%20-%20E.E.%20Jos%C3%A9%20Alves%20de%20Cerqueira%20C%C3%A9sar!5e0!3m2!1spt-BR!2sbr!4v1728589965668!5m2!1spt-BR!2sbr"
+                width="1200" height="1000" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <main>
+            <hr class="divider">
+        </main>
+
+        <div class="unidades-container">
+            <div class="unidade">
+                <h3>Unidade Guarulhos I</h3>
+                <p>Rua Treze de Maio, 1234</p>
+                <p>(11)9 8765-4321</p>
+                <p>Pronto Atendimento</p>
+                <p>Atendimento 24h</p>
+                <p>Atendimento Público</p>
+
+            </div>
+
+            <div class="unidade">
+                <h3>Unidade Guarulhos I</h3>
+                <p>Av. Brigadeiro Faria Lima N°1234</p>
+                <p>(11) 3794-0298</p>
+                <p>Seg-Seb: 7h às 22h</p>
+                <p>Doe Sangue</p>
+                <p>Atendimento Público</p>
+
+            </div>
+
+            <div class="unidade">
+                <h3>Unidade São Paulo I</h3>
+                <p>Rua Flor de Ouro, 1235</p>
+                <p>(11)4040-2911</p>
+                <p>Pronto Atendimento</p>
+                <p>Atendimento 24h</p>
+                <p>Atendimento Público</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="unidades-2">
+        <div class="container-2">
+            <div class="unidade-3">
+                <h3>Unidade São Paulo II</h3>
+                <p>Rua Quintino Bocaiúva, 893</p>
+                <p>(11) 2206-2149</p>
+                <p>Centro diagnóstico</p>
+                <p>Atendimento 24h</p>
+                <p>Atendimento Público</p>
+            </div>
+
+            <div class="unidade">
+                <h3>Unidade São Paulo III</h3>
+                <p>Avenida Celso Garcia, 4716</p>
+                <p>(11) 3397-5849</p>
+                <p>Centro diagnóstico</p>
+                <p>Seg-Sex: 5h30 às 22h</p>
+                <p>Atendimento Público</p>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hospital MedLink. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
